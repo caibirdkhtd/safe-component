@@ -1,0 +1,76 @@
+
+// 针对数字项目产品设计规范，对elementUI的重设
+@import './colors.less';
+
+// 按钮重设
+.el-button--default{
+  color: @PrimaryText;
+}
+.el-button--medium{
+  padding: 10px 16px;
+}
+.el-button--mini{
+  padding: 6px 10px;
+}
+.el-button--text{
+  color:@Brand;
+}
+
+//修改placeholder
+.el-input__inner {
+  &::placeholder {
+    color: @Grey-6;
+  }
+}
+
+// 列表
+.el-table{
+  color: @PrimaryText;
+}
+.el-table th{
+  padding: 9px 0;
+  background-color: @Grey-2;
+  color:@PrimaryText;
+}
+.el-table td{
+  padding: 6px 0;
+}
+
+//树
+#app .el-tree{
+  .el-tree-node.is-current>.el-tree-node__content {
+    background-color: @Brand;
+    span{
+      color:#fff;
+    }
+    span.el-tree-node__expand-icon.is-leaf {
+      color: transparent;
+      cursor: default;
+    }
+  }
+  span.el-tree-node__expand-icon {
+    font-size: 14px;
+    color: #000;
+  }
+  span.el-tree-node__expand-icon.is-leaf {
+    color: transparent;
+    cursor: default;
+  }
+  .el-tree-node__content{
+    font-size: 14px;
+    height:34px;
+    color: @PrimaryText;
+  }
+
+  .el-tree-node__content:hover {
+    background-color: #F0F7FF;
+  }
+}
+
+//dialog
+.el-dialog__title{
+  font-size: 16px;
+  color: #4D5664;
+  height:22px;
+  line-height:22px;
+}

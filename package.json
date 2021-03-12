@@ -1,0 +1,29 @@
+{
+  "name": "safe-component",
+  "version": "0.1.382",
+  "description": "shared codes",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build/build.js",
+    "build_utils": "node build/build_utils.js",
+    "build_mx": "node build/build_mx.js",
+    "build_api": "node build/build_api.js",
+    "fixed_window": "node build/fix_window.js",
+    "build_report": "node build/build_report.js",
+    "build_excel": "node build/build_excel.js",
+    "build_file_server": "node build/build_file_server.js",
+    "build_all": "npm run build && npm run build_utils && npm run build_api && npm run build_mx && npm run build_report && npm run build_excel && npm run build_file_server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "babel-preset-latest": "^6.24.1",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

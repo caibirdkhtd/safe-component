@@ -1,0 +1,96 @@
+// 公共样式
+// 安全产品公共样式
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; 
+
+    // 滚动条
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #dddddd;
+    }
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+    }
+}
+
+#app{
+    // 布局
+    position: absolute;
+    background: #f8f9fb;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    min-width: 1126px;
+    // min-height: 600px;
+
+    .back-title{
+        height: 25px;
+        padding: 8px 24px;
+        line-height: 25px;
+    }
+
+    //页面主体
+    &.app-body,
+    .app-body{
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        top: 20px;
+        background-color: #fff;
+        box-shadow: 0px 2px 6px 0px rgba(165, 165, 165, 0.5);
+        border-radius: 2px;
+        overflow-y: hidden;
+        padding: 24px;
+    }
+
+    .back-title +.app-body{
+        top: 42px;
+    }
+
+    .text-overflow {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .text-overflow.lines{
+        display: -webkit-box;
+        white-space: normal;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
+
+//列表页-过滤条件面板布局
+.sf-filter-panel{
+    margin-bottom: 20px;
+    .sf-flt-item{
+        display: inline-block;
+        margin-right:16px;
+        &:last-child{
+        margin-right:0;
+        }
+    }
+    .sf-flt-label{
+        width:70px;
+        color:#555555;
+        font-size:14px;
+    }
+
+}

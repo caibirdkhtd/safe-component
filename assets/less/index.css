@@ -1,0 +1,57 @@
+.safe-page__app-body {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(165, 165, 165, 0.5);
+  border-radius: 2px;
+  overflow-y: hidden;
+  padding: 24px;
+}
+.safe-text-overflow {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.safe-text-overflow.lines {
+  display: -webkit-box;
+  white-space: normal;
+  box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.safe-dialog__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.safe-dialog__wrap .el-dialog {
+  margin: 0 auto !important;
+  height: 90%;
+  overflow: hidden;
+}
+.safe-dialog__wrap .el-dialog__header {
+  border-bottom: 1px solid #dedede;
+}
+.safe-dialog__wrap .el-dialog__body {
+  position: absolute;
+  left: 15px;
+  top: 54px;
+  bottom: 60px;
+  right: 15px;
+  z-index: 1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.safe-dialog__wrap .el-dialog__footer {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #dedede;
+}
