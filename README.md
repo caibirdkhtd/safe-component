@@ -78,6 +78,3 @@ import { setProgress } from 'safe-component/lib/mixins'
 ```
 mixins: [ setProgress ],
 ```
-
-#### wiki文档（包含组件、公共方法说明）
-https://km.glodon.com/pages/viewpage.action?pageId=38641382
